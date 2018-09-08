@@ -1,0 +1,23 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.city {
+    background: #999;
+    width: max-content;
+    padding: 3rem;
+}
+
+#title, #country {
+    display: inline;
+    
+}
+
+#title {
+    font-size: 2rem;
+    display: inline-block;
+    margin-bottom: 1rem;
+}
