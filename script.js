@@ -12,7 +12,7 @@ function getWeather(woeid) {
 })
 
 .then(data => {
-//        
+        
 //        function getDay() {
 //            for (let i = 0; i < data.consolidated_weather.length; i++) {
 //                day = data.consolidated_weather[i];
@@ -27,18 +27,17 @@ function getWeather(woeid) {
 //                
 //            }  
 //        }
-//    
-//        getDay();
-     day = data.consolidated_weather[0];
+    
+     //   getDay();
+                day = data.consolidated_weather[0];
                 date.textContent += `${day.applicable_date}`;    
-                city.textContent = `${data.title}`;
+                city.textContent = `${data.title},`;
                 country.textContent = `${data.parent.title}`;
                 let min_temp = Math.trunc(`${day.min_temp}`);   
                 let max_temp = Math.trunc(`${day.max_temp}`);    
                 min.textContent += `Min: ${min_temp}\xB0C`;
                 max.textContent += `Max: ${max_temp}\xB0C`;
-        
-      
+
 })
 .catch(err => 
     console.log(err));
