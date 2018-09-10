@@ -23,9 +23,7 @@ function getWeather(woeid) {
 //                let max_temp = Math.trunc(`${day.max_temp}`);    
 //                min.textContent += `Min: ${min_temp}\xB0C`;
 //                max.textContent += `Max: ${max_temp}\xB0C`;
-//                
-//                
-//            }  
+//             }  
 //        }
     
      //   getDay();
